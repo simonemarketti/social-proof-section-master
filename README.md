@@ -21,4 +21,4 @@ https://simonemarketti.github.io/tip-calculator
 
 ### Notes
 
-Based on “splitter” project by Frontend Mentor (https://www.frontendmentor.io)
+Based on “social proof master” project by Frontend Mentor (https://www.frontendmentor.io)
