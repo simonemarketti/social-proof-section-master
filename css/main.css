@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Spartan";
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+body header {
+  padding: 80px 24px 20px;
+  text-align: center;
+}
+
+body header h1 {
+  color: #512051;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+body header p {
+  color: #927b91;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+body .ratings {
+  padding: 20px 24px;
+}
+
+body .ratings .rating-container {
+  background-color: #f7f2f7;
+  margin-bottom: 16px;
+  padding: 10px 0px;
+  border-radius: 8px;
+}
+
+body .ratings .rating-container .stars-container {
+  width: 117px;
+  height: 20px;
+  background-image: url("../images/icon-star.svg");
+  background-size: 20px 20px;
+  background-repeat: space;
+  margin: 0 auto 16px;
+}
+
+body .ratings .rating-container .rating-description {
+  color: #512051;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+body .testimonials {
+  padding: 20px 24px 80px;
+}
+
+body .testimonials .review-container {
+  background-color: #512051;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+body .testimonials .review-container .testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 32px 26px;
+}
+
+body .testimonials .review-container .testimonial-container .testimonial-photo {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 23px;
+}
+
+body .testimonials .review-container .testimonial-container .person-container {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+body .testimonials .review-container .testimonial-container .person-container .name {
+  color: #fff;
+  font-weight: 700;
+  line-height: 15px;
+  padding-bottom: 5px;
+}
+
+body .testimonials .review-container .testimonial-container .person-container .profession {
+  color: #ee69a4;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+body .testimonials .review-container .review {
+  padding: 0 32px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+  }
+  body header {
+    width: 50%;
+    padding-left: 165px;
+    padding-top: 128px;
+  }
+  body header h1 {
+    font-size: 48px;
+    line-height: 48px;
+    width: 445px;
+    text-align: left;
+    min-height: 154px;
+  }
+  body header p {
+    width: 445px;
+    text-align: left;
+  }
+  body .ratings {
+    width: 50%;
+    padding-top: 145px;
+    padding-right: 165px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .ratings .rating-container {
+    width: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  body .ratings .rating-container:nth-child(2) {
+    margin-right: 30px;
+  }
+  body .ratings .rating-container:nth-child(1) {
+    margin-right: 60px;
+  }
+  body .testimonials {
+    width: 100%;
+    padding: 50px 165px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .testimonials .review-container {
+    width: 32%;
+    height: 234px;
+    margin: 0px;
+  }
+  body .testimonials .review-container:nth-child(2) {
+    margin-top: 10px;
+  }
+  body .testimonials .review-container:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

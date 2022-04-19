@@ -1,0 +1,178 @@
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+// Colors
+$dark-purple: #512051;
+$soft-purple: #927b91;
+$light-purple: #f7f2f7;
+$pink: #ee69a4;
+$white: #fff;
+
+//Breakpoint
+$breakpoint-desktop: 1440px;
+
+// Partials
+@import "reset";
+
+body {
+  font-family: "Spartan";
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+
+  header {
+    padding: 80px 24px 20px;
+    text-align: center;
+    h1 {
+      color: $dark-purple;
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    p {
+      color: $soft-purple;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .ratings {
+    padding: 20px 24px;
+    .rating-container {
+      background-color: $light-purple;
+      margin-bottom: 16px;
+      padding: 10px 0px;
+      border-radius: 8px;
+      .stars-container {
+        width: 117px;
+        height: 20px;
+        background-image: url("../images/icon-star.svg");
+        background-size: 20px 20px;
+        background-repeat: space;
+        margin: 0 auto 16px;
+      }
+      .rating-description {
+        color: $dark-purple;
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 20px 24px 80px;
+    .review-container {
+      background-color: $dark-purple;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      .testimonial-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 32px 26px;
+        .testimonial-photo {
+          width: 40px;
+          border-radius: 50%;
+          margin-right: 23px;
+        }
+        .person-container {
+          font-size: 13px;
+          line-height: 15px;
+          .name {
+            color: $white;
+            font-weight: 700;
+            line-height: 15px;
+            padding-bottom: 5px;
+          }
+          .profession {
+            color: $pink;
+            font-weight: 400;
+            line-height: 15px;
+          }
+        }
+      }
+      .review {
+        padding: 0 32px 32px;
+        color: $white;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    header {
+      width: 50%;
+      padding-left: 165px;
+      padding-top: 128px;
+      h1 {
+        font-size: 48px;
+        line-height: 48px;
+        width: 445px;
+        text-align: left;
+        min-height: 154px;
+      }
+      p {
+        width: 445px;
+        text-align: left;
+      }
+    }
+    .ratings {
+      width: 50%;
+      padding-top: 145px;
+      padding-right: 165px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      .rating-container {
+        width: 85%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        &:nth-child(2) {
+          margin-right: 30px;
+        }
+        &:nth-child(1) {
+          margin-right: 60px;
+        }
+      }
+    }
+    .testimonials {
+      width: 100%;
+      padding: 50px 165px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .review-container {
+        width: 32%;
+        height: 234px;
+        margin: 0px;
+        &:nth-child(2) {
+          margin-top: 10px;
+        }
+        &:nth-child(3) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
