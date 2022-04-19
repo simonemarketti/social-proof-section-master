@@ -1,14 +1,13 @@
-# Splitter Tip Calculator
+# Social proof section
 
 ## Overview
 
-This is a responsive and mobile-first designed tip calculator.
+This is a mobile (375px) and desktop (1440px) different layout site.name
 
 ### Concepts
 
 - Mobile first design
 - Responsive
-- Full responsive webpage at different breakpoints with Bulma (mobile: 327, desktop: 1024)
 
 ### Languanges and tools
 
