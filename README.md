@@ -17,7 +17,7 @@ This is a mobile (375px) and desktop (1440px) different layout site.name
 
 ### Links
 
-https://simonemarketti.github.io/tip-calculator
+https://simonemarketti.github.io/social-proof-section-master/
 
 ### Notes
 
